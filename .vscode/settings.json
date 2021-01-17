@@ -1,5 +1,7 @@
 {
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "python.pythonPath": "/Users/manotlj/.virtualenvs/djangodev/bin/python",
+  "editor.minimap.enabled": false
 }
