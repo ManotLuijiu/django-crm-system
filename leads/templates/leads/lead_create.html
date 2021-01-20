@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lead Create</title>
-    <style>
-      .lead {
-        padding: 10px 6px 10px 6px;
-        margin-top: 10px;
-        background-color: #f6f6f6;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="{% url 'leads:lead_list'%}">Go back to leads</a>
-    <hr />
-    <h1>Create a new lead</h1>
-    <form method="post">
-      {% csrf_token %} {{ form.as_p }}
-      <button type="submit">Submit</button>
-    </form>
-  </body>
-</html>
+{% extends "base.html" %} {% block content %}
+
+<a href="{% url 'leads:lead_list'%}">Go back to leads</a>
+<hr />
+<h1>Create a new lead</h1>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+
+{% endblock content %}
