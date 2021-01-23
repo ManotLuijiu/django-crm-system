@@ -44,7 +44,8 @@ SECRET_KEY = os.environ.get(
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['murmuring-inlet-55853.herokuapp.com',
+                 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
