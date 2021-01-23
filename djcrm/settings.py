@@ -154,8 +154,7 @@ STATIC_URL = STATIC_HOST + '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    '/var/www/static/'
+    BASE_DIR / 'static'
 ]
 
 # Add custom user model
